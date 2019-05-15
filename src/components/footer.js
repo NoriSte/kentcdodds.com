@@ -1,15 +1,13 @@
-import React from 'react'
-import Link from '../components/link'
 import {css} from '@emotion/core'
+import React from 'react'
 import theme from '../../config/theme'
-import {bpMaxSM} from '../lib/breakpoints'
-import SubscribeForm from './forms/subscribe'
-import {Twitter, GitHub, YouTube} from './social'
-import Container from './container'
-
+import Link from '../components/link'
 import Signature from '../images/signature.png'
+import {bpMaxSM} from '../lib/breakpoints'
+import Container from './container'
+import {GitHub, Twitter, YouTube} from './social'
 
-const Footer = ({subscribeForm = <SubscribeForm />}) => (
+const Footer = () => (
   <footer
     css={css`
       background: ${theme.colors.purple_dark};
@@ -30,13 +28,6 @@ const Footer = ({subscribeForm = <SubscribeForm />}) => (
         }
       `}
     >
-      {subscribeForm ? (
-        <div css={{marginTop: -40}}>
-          {subscribeForm}
-          <br />
-          <br />
-        </div>
-      ) : null}
       <div
         css={css`
           display: flex;
