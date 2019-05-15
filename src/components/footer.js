@@ -1,8 +1,6 @@
 import {css} from '@emotion/core'
 import React from 'react'
 import theme from '../../config/theme'
-import Link from '../components/link'
-import Signature from '../images/signature.png'
 import {bpMaxSM} from '../lib/breakpoints'
 import Container from './container'
 import {GitHub, Twitter, YouTube} from './social'
@@ -50,16 +48,6 @@ const Footer = () => (
           <GitHub />
           <YouTube />
         </div>
-
-        <Link to="/" aria-label="Return to homepage">
-          <img
-            src={Signature}
-            alt="Kent C. Dodds"
-            css={css`
-              max-width: 100px;
-            `}
-          />
-        </Link>
       </div>
     </Container>
   </footer>
