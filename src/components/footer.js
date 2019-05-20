@@ -3,7 +3,7 @@ import React from 'react'
 import theme from '../../config/theme'
 import {bpMaxSM} from '../lib/breakpoints'
 import Container from './container'
-import {GitHub, Twitter, YouTube} from './social'
+import {GitHub, LinkedIn, NPM, StackOverflow, Twitter} from './social'
 
 const Footer = () => (
   <footer
@@ -46,7 +46,9 @@ const Footer = () => (
         <div>
           <Twitter />
           <GitHub />
-          <YouTube />
+          <LinkedIn />
+          <StackOverflow />
+          <NPM />
         </div>
       </div>
     </Container>

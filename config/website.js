@@ -28,9 +28,12 @@ module.exports = {
   backgroundColor: '#231C42',
 
   // Social component
-  twitter: 'https://twitter.com/kentcdodds/',
-  twitterHandle: '@kentcdodds',
-  github: 'https://github.com/kentcdodds/',
-  linkedin: 'https://www.linkedin.com/in/kentcdodds/',
-  youtube: 'https://www.youtube.com/channel/UCz-BYvuntVRt_VpfR6FKXJw',
+  twitter: 'https://twitter.com/noriste/',
+  twitterHandle: '@NoriSte',
+  github: 'https://github.com/noriste/',
+  linkedin: 'https://www.linkedin.com/in/noriste/',
+  stackoverflow: 'https://stackoverflow.com/users/700707/noriste',
+  cv: 'https://www.visualcv.com/stefano-magni/',
+  npm: 'https://www.npmjs.com/settings/noriste/packages',
+  // youtube: 'https://www.youtube.com/channel/UCz-BYvuntVRt_VpfR6FKXJw',
 }
