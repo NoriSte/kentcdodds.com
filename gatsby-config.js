@@ -177,7 +177,7 @@ function getBlogFeed({filePathRegex, blogUrl, ...overrides}) {
             <div style="display: flex;">
               <div style="padding-right: 20px;">
                 <img
-                  src="https://kentcdodds.com/images/small-circular-kent.png"
+                  src="https://kentcdodds.com/images/small-circular-noriste.png"
                   alt="Kent C. Dodds"
                   style="max-width: 80px; border-radius: 50%;"
                 />

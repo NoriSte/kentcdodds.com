@@ -1,14 +1,13 @@
-import React from 'react'
 import {css} from '@emotion/core'
-import theme from '../../config/theme'
-import {bpMaxMD, bpMaxSM} from '../lib/breakpoints'
-import {rhythm, fonts} from '../lib/typography'
-import Markdown from 'react-markdown'
 import Container from 'components/container'
-
-import heroImageRight from '../images/hero/path-right.svg'
+import React from 'react'
+import Markdown from 'react-markdown'
+import theme from '../../config/theme'
+import photoOfKent from '../images/hero/noriste.png'
 import heroImageLeft from '../images/hero/path-left.svg'
-import photoOfKent from '../images/hero/kent.png'
+import heroImageRight from '../images/hero/path-right.svg'
+import {bpMaxMD, bpMaxSM} from '../lib/breakpoints'
+import {fonts, rhythm} from '../lib/typography'
 
 function Hero({
   children,
@@ -79,7 +78,6 @@ function Hero({
               `}
               background-image: url(${image});
               background-size: cover;
-              background-position-y: 10px;
               background-repeat: no-repeat;
               margin-bottom: 25px;
             }
