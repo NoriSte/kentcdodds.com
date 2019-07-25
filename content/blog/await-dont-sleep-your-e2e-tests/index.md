@@ -107,7 +107,7 @@ driver.wait(function() {
 })
 ```
 
-**TestCafe**
+**TestCafé**
 
 ```javascript
 fixture`Page load`.page`http://localhost:3000`
@@ -180,22 +180,21 @@ wait.until(ExpectedConditions.textToBePresentInElement(el, 'Success'))
 
 <br />
 
-**TestCafe<sup> <a href="#footnote2">2</a></sup>**
+**TestCafé<sup> <a href="#footnote2">2</a></sup>**
 
 - waiting for an element:
 
 ```javascript
-let formFeedback = Selector('#form-feedback').with({timeout: 4000})
-await formFeedback
+// it waits up to 10 seconds by default
+await Selector('#form-feedback')
+// the timeout can be customized
+await Selector('#form-feedback').with({timeout: 4000})
 ```
 
 - waiting for an element with specific content
 
 ```javascript
-let formFeedback = Selector('#form-feedback')
-  .withText('Success')
-  .with({timeout: 4000})
-await formFeedback
+await Selector('#form-feedback').withText('Success')
 ```
 
 <br />
@@ -257,7 +256,7 @@ something in the DOM that reflects the XHR result instead of looking for the XHR
 
 - Selenium WebDriver:
   [5 Ways to Test AJAX Calls in Selenium WebDriver](https://www.blazemeter.com/blog/five-ways-to-test-ajax-calls-with-selenium-webdriver)
-- TestCafe:
+- TestCafé:
   [Wait Mechanism for XHR and Fetch Requests](https://devexpress.github.io/testcafe/documentation/test-api/built-in-waiting-mechanisms.html#wait-mechanism-for-xhr-and-fetch-requests)
 - DOM Testing Library:
   [await API](https://testing-library.com/docs/dom-testing-library/api-async#wait)
@@ -309,7 +308,7 @@ browser.executeAsyncScript(`
 
 <br />
 
-**TestCafe<sup> <a href="#footnote2">2</a></sup>**
+**TestCafé<sup> <a href="#footnote2">2</a></sup>**
 
 ```javascript
 const waiting = ClientFunction(() => {
@@ -335,4 +334,4 @@ await wait(() => global.foo === 'bar')
 <br />
 <a id="footnote1">1</a>: unlike Cypress, Puppeteer, etc. DOM Testing Library is quite a different tool, that's why the examples are not available for every single part.
 <br /><br />
-<a id="footnote2">2</a>: if there are better solutions or plugins to do the same, please let me know! I know Cypress, Puppeteer, and DOM Testing Library pretty well, but I can not say the same for Selenium and TestCafe.
+<a id="footnote2">2</a>: if there are better solutions or plugins to do the same, please let me know! I know Cypress, Puppeteer, and DOM Testing Library pretty well, but I can not say the same for Selenium and TestCafé.
