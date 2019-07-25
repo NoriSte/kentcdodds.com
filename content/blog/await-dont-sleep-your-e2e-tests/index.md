@@ -4,7 +4,7 @@ title: 'Await, do not sleep your E2E tests ⏳'
 date: '2019-07-25'
 author: 'Stefano Magni'
 description:
-  '_Sleeping: the worst practice in E2E testing. The concept of Determinist
+  '_Sleeping: the worst practice in E2E testing and the concept of Determinist
   Events._'
 categories:
   - 'testing'
@@ -18,6 +18,11 @@ bannerCredit:
   'Photo by [Joe Roberts](https://unsplash.com/photos/7aGbdAhEbKg) on
   [Unsplash](https://unsplash.com)'
 ---
+
+<!--
+TODO: link this post from Medium
+TODO: set the cacnonical link on Medium to point here
+-->
 
 I'm working on a big
 [UI Testing Best Practices](https://github.com/NoriSte/ui-testing-best-practices)
@@ -58,8 +63,9 @@ time that makes the test as fast as possible!
 
 Waitings fall in four main categories
 
-- **[page Load waitings](#page-load-waitings)** allows you to understand that
-  the page is interactive
+- **[page Load waitings](#page-load-waitings)**: the first waiting to manage
+  while testing your app, waiting for an event that allows you to understand
+  that the page is interactive
 - **[content waitings](#content-waitings)**: waiting for DOM element that
   matches a selector
 - **[XHR request waitings](#xhr-request-waitings)**: waiting for an XHR request
@@ -71,11 +77,10 @@ Every UI testing tool manages waitings in different ways, sometimes
 automatically and sometimes manually. Below you can find some examples of
 implementing the listed waitings.
 
-<h3 id="page-load-waitings">Page Load waitings</h3>
+<h3 id="page-load-waitings">Page load waitings</h3>
 
 Every E2E testing tool manages the page load waiting in a different way (in
-terms of what is waited before considering the page loaded), below you can find
-some examples.
+terms of what is waited before considering the page loaded).
 
 **Cypress**
 
@@ -105,7 +110,7 @@ driver.wait(function() {
 **TestCafe**
 
 ```javascript
-fixture`Page Load`.page`http://localhost:3000`
+fixture`Page load`.page`http://localhost:3000`
 ```
 
 <h3 id="content-waitings">Content waitings</h3>
@@ -124,7 +129,7 @@ cy.get('#form-feedback')
 cy.get('#form-feedback', {timeout: 5000})
 ```
 
-- waiting for an element with a specific content
+- waiting for an element with specific content
 
 ```javascript
 cy.get('#form-feedback').contains('Success')
@@ -143,7 +148,7 @@ await page.waitForSelector('#form-feedback')
 await page.waitForSelector('#form-feedback', {timeout: 5000})
 ```
 
-- waiting for an element with a specific content
+- waiting for an element with specific content
 
 ```javascript
 await page.waitForFunction(
@@ -166,7 +171,7 @@ await page.waitForFunction(
 driver.wait(until.elementLocated(By.id('#form-feedback')), 4000)
 ```
 
-- waiting for an element with a specific content
+- waiting for an element with specific content
 
 ```javascript
 const el = driver.wait(until.elementLocated(By.id('#form-feedback')), 4000)
@@ -184,7 +189,7 @@ let formFeedback = Selector('#form-feedback').with({timeout: 4000})
 await formFeedback
 ```
 
-- waiting for an element with a specific content
+- waiting for an element with specific content
 
 ```javascript
 let formFeedback = Selector('#form-feedback')
@@ -203,7 +208,7 @@ await formFeedback
 await waitForElement(() => getByTestId('form-feedback'))
 ```
 
-- waiting for an element with a specific content
+- waiting for an element with specific content
 
 ```javascript
 const container = await waitForElement(() => getByTestId('form-feedback'))
@@ -259,7 +264,7 @@ something in the DOM that reflects the XHR result instead of looking for the XHR
 
 <h3 id="custom-waitings">Custom waitings</h3>
 
-The various UI testing tools/frameworks have built-in solutions to perform lot
+The various UI testing tools/frameworks have built-in solutions to perform a lot
 of checks, but let's concentrate on writing a custom waiting. Since UI testing
 is 100% asynchronous, a custom waiting should face recursive promises, a concept
 not so handy to manage at the beginning.
@@ -330,4 +335,4 @@ await wait(() => global.foo === 'bar')
 <br />
 <a id="footnote1">1</a>: unlike Cypress, Puppeteer, etc. DOM Testing Library is quite a different tool, that's why the examples are not available for every single part.
 <br /><br />
-<a id="footnote2">2</a>: if there are better solutions or plugins to do the same, please let me know! I know Cypress, Puppeeteer, and DOM Testing Library pretty well, but I can not say the same for Selenium and TestCafe.
+<a id="footnote2">2</a>: if there are better solutions or plugins to do the same, please let me know! I know Cypress, Puppeteer, and DOM Testing Library pretty well, but I can not say the same for Selenium and TestCafe.
