@@ -1,6 +1,6 @@
 ---
 slug: 'await-dont-sleep-your-e2e-tests'
-title: 'Await, do not sleep your E2E tests ⏳'
+title: 'Await, do not make your E2E tests sleep ⏳'
 date: '2019-07-25'
 author: 'Stefano Magni'
 description:
