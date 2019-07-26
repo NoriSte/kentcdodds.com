@@ -313,16 +313,8 @@ browser.executeAsyncScript(`
 **TestCafé<sup> <a href="#footnote2">2</a></sup>**
 
 ```javascript
-const waiting = ClientFunction(() => {
-  return Promise(resolve => {
-    window.setTimeout(function() {
-      if (window.foo === 'bar') {
-        resolve()
-      }
-    }, 300)
-  })
-})
-await waiting()
+const waiting = ClientFunction(() => window.foo === 'bar')
+await t.expect(waiting()).ok({timeout: 5000})
 ```
 
 <br />
