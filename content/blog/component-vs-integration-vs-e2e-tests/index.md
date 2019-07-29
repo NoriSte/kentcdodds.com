@@ -87,6 +87,7 @@ assert the input field value after the keyboard events triggered.
 They run the whole app in a real browser **without hitting a real server**.
 These tests are the ace in the hole of every front-end developer. They are
 blazing fast and less exposed to random failures or false negatives.
+[Cypress](https://www.cypress.io) is perfect for UI Integration tests.
 
 The front-end application does not know that there is not a real server: every
 AJAX call is resolved in no time by the testing tool. Static JSON responses
@@ -131,6 +132,8 @@ business cares about (prioritizing them, obviously)
 Identifying/defining the type of test is useful to group them, to limit their
 scope, and to choose where to run them or not though the whole application and
 deployment pipelines.
+
+Again, [Cypress](https://www.cypress.io) is my tool of choice for E2E tests.
 
 ## Name them wisely
 
