@@ -24,8 +24,10 @@ TODO: set the cacnonical link on Medium to point here
 I'm working on a big
 [UI Testing Best Practices](https://github.com/NoriSte/ui-testing-best-practices)
 project on GitHub, I share this post to spread it and have direct
-feedback.<br /> You can read the post here or
-[on Medium](https://medium.com/@NoriSte/component-vs-ui-integration-vs-e2e-tests-f02b575339dc).
+feedback.<br /> You can read the post here,
+[on Medium](https://medium.com/@NoriSte/component-vs-ui-integration-vs-e2e-tests-f02b575339dc)
+or
+[on dev.to](https://dev.to/noriste/component-vs-ui-integration-vs-e2e-tests-3i0d).
 
 ---
 

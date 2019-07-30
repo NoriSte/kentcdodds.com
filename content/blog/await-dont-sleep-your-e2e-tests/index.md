@@ -27,8 +27,10 @@ TODO: set the cacnonical link on Medium to point here
 I'm working on a big
 [UI Testing Best Practices](https://github.com/NoriSte/ui-testing-best-practices)
 project on GitHub, I share this post to spread it and have direct
-feedback.<br /> You can read the post here or
-[on Medium](https://medium.com/@NoriSte/await-do-not-sleep-your-e2e-tests-df67e051b409).
+feedback.<br /> You can read the post here,
+[on Medium](https://medium.com/@NoriSte/await-do-not-sleep-your-e2e-tests-df67e051b409)
+or
+[on dev.to](https://dev.to/noriste/await-do-not-make-your-e2e-tests-sleep-4g1o).
 
 ---
 
