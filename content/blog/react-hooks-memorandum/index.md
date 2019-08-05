@@ -15,7 +15,7 @@ bannerCredit: ''
 
 <!--
 TODO: link this post from Medium
-TODO: set the cacnonical link on Medium to point here
+TODO: set the canonical link on Medium, dev.to etc to point here
 -->
 
 You can read the post here or
