@@ -20,6 +20,8 @@ bannerCredit:
 TODO: link this post from Medium
 TODO: set the canonical link on Medium, dev.to etc to point here
 https://medium.com/@NoriSte/software-tests-as-a-documentation-tool-e1c463bad1be
+https://dev.to/noriste/software-tests-as-a-documentation-tool-36pl
+https://www.linkedin.com/pulse/software-tests-documentation-tool-stefano-magni
 -->
 
 I'm working on a big
